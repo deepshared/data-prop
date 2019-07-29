@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 138fa483cef0ed211f9bab7d035285865803a9c42cc27ab24fd1f1cf3546e964
+
+name:           data-prop
+version:        0.4
+synopsis:       Abstraction for storing and accessing data properties.
+category:       Data
+stability:      experimental
+homepage:       https://github.com/https://github.com/wdanilo/data-prop#readme
+bug-reports:    https://github.com/https://github.com/wdanilo/data-prop/issues
+author:         Wojciech Danilo
+maintainer:     Wojciech Danilo <wojciech.danilo@gmail.com>
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/https://github.com/wdanilo/data-prop
+
+library
+  exposed-modules:
+      Data.Property
+  other-modules:
+      Paths_data_prop
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes ConstraintKinds DataKinds DefaultSignatures MultiParamTypeClasses RankNTypes ScopedTypeVariables TypeApplications TypeFamilies TypeOperators
+  ghc-options: -Wall -O2
+  build-depends:
+      base
+    , lens
+  default-language: Haskell2010
